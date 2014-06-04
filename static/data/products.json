@@ -1,0 +1,66 @@
+{ 
+	"prodCategory": [
+		{"displayName" : "Venner", "id" : "venner", "template_type":"product_detail_v1_t3", "image_path":"venner/fullscreen/","image":"images6.jpg", "seqNb": 1, "shortDesc":"Venner", "description":"Venner", "isLeaf":"true",
+			
+				"products" : [
+					{"displayName" : "Decorative", "id" : "flushdoor", "image_path":"venner/fullscreen/","image":"color_coated/products/Galvanized-Steel-Coil-Pre-Painted-Ral-standard.jpg", "description":"M.S. Square Pipe", "seqNb": 1
+					},
+					{"displayName" : "Normal", "id" : "decorativedoor", "image_path":"color_coated/products/","image":"images.jpg", "description":"M.S. Round Pipe", "seqNb": 2
+					}
+				]
+			
+		},
+		{"displayName" : "Roofing Sheets", "id" : "roofingSheets", "template_type":"product_detail_v1_t1","image_path":"roofing","image":"colour-coated-roofing-sheets-250x250.jpg", "seqNb": 1, "shortDesc":"Roofing Sheets", "description":"We present a top-of-the-line range of Color Coated Roofing Sheets, which is known for its elegant designs, durability and cost-effectiveness. Thus, it finds application in varied industries. Our sheets are basically a ready-to-use product that can be cut, pressed, bent, roll formed, drilled, joined and lock-seamed, all without damaging the surface or the substance. In addition to this, clients can avail these sheets in varied specifications on the basis of grades, colors and forms.", "isLeaf":"true", "features": "durable#high strength", "usage":"shops#garden", "variety":"avaible in 4ft, 8ft, 10ft, 12ft, 14ft, 16ft",
+			"products" : [
+				{"displayName" : "Color Coated Sheets", "id" : "colorcoated", "image_path":"roofing","image":"coated2.jpg", "description":"Color Coated Sheets", "seqNb": 1, "features": "durable#high strength", "usage":"shops#garden", "variety":"avaible in 4ft, 8ft, 10ft, 12ft, 14ft, 16ft"
+				},
+				{"displayName" : "Tiles / Coula Sheets", "id" : "tilescoula", "image_path":"roofing","image":"tiles-sheets-250x250.jpg", "description":"Tiles Coula Sheets", "seqNb": 2, "features": "durable#high strength", "usage":"shops#garden", "variety":"avaible in 4ft, 8ft, 10ft, 12ft, 14ft, 16ft"
+				}
+			]
+		},
+		{"displayName" : "Galvanized Sheets", "id" : "galvaSheets", "template_type":"product_detail_v1_t1", "image_path":"roofing","image":"galvanized-sheets-250x250.jpg", "seqNb": 1, "shortDesc":"Galvanized Sheets", "description":"Galvanized Sheets", "isLeaf":"true",
+			"products" : [
+				{"displayName" : "Galvanized Plain Sheets", "id" : "galvaplain", "image_path":"roofing","image":"gi-sheets-250x250.jpg", "description":"Galvanized Plain Sheets", "seqNb": 1
+				},
+				{"displayName" : "Galvanized Corrugated Sheets", "id" : "galvacorrugated", "image_path":"roofing","image":"corrugated-steel-sheets.jpg", "description":"Galvanized Corrugated Sheets", "seqNb": 2
+				}
+			]
+		},
+		{"displayName" : "CRC Sheets", "id" : "crcsheets", "template_type":"product_detail_v1_t1", "image_path":"roofing","image":"crc-sheets-250x250.jpg", "seqNb": 1, "shortDesc":"CRC Sheets", "description":"CRC Sheets", "isLeaf":"true",
+			"products" : [
+				{"displayName" : "CRCA Sheets", "id" : "crcasheets", "image_path":"roofing","image":"crc-sheets-250x250.jpg", "description":"CRCA Sheets", "seqNb": 1
+				}
+			]
+		},
+		{"displayName" : "HR Sheets", "id" : "hrsheets", "template_type":"product_detail_v1_t1", "image_path":"roofing","image":"hr-sheets-250x250.jpg", "seqNb": 1, "shortDesc":"HR Sheets", "description":"HR Sheets", "isLeaf":"true",
+			"products" : [
+				{"displayName" : "Hot Rolled Sheets", "id" : "hotrolledsheets", "image_path":"roofing","image":"hr-sheets-250x250.jpg", "description":"Hot Rolled Coils", "seqNb": 1
+				}
+			]
+		},
+		{"displayName" : "Steel Screw", "id" : "steelscrew", "template_type":"product_detail_v1_t1", "image_path":"roofing","image":"tapping-screws-250x250.jpg", "seqNb": 1, "shortDesc":"Screw", "description":"Screw", "isLeaf":"true",
+			"products" : [
+				{"displayName" : "Tapping Screw", "id" : "tapscrew", "image_path":"roofing","image":"tapping-screws-250x250.jpg", "description":"Tapping Screw", "seqNb": 1
+				}
+
+			]
+		},
+		{"displayName" : "Mild Steel Products", "id" : "mildsteel", "template_type":"product_detail_v1_t1", "image_path":"roofing","image":"ms-square-pipes-250x250.jpg", "seqNb": 1, "shortDesc":"Mild Steel", "description":"Mild Steel", "isLeaf":"true",
+			"products" : [
+				{"displayName" : "MS Square Pipes", "id" : "squarepipe", "image_path":"roofing","image":"ms-square-pipes-250x250.jpg", "description":"M.S. Square Pipe", "seqNb": 1
+				},
+				{"displayName" : "MS Round Pipes", "id" : "roundpipe", "image_path":"roofing","image":"ms-square-pipes-250x250.jpg", "description":"M.S. Round Pipe", "seqNb": 2
+				}
+			]
+		},
+		{"displayName" : "Door", "id" : "wooddoor", "template_type":"product_detail_v1_t1", "image_path":"roofing","image":"wood.jpg", "seqNb": 1, "shortDesc":"Wood Doors", "description":"Wood Door", "isLeaf":"true",
+			"products" : [
+				{"displayName" : "Flush Door", "id" : "flushdoor", "image_path":"roofing","image":"images1.jpg", "description":"M.S. Square Pipe", "seqNb": 1
+				},
+				{"displayName" : "Modular Door Panel", "id" : "decorativedoor", "image_path":"roofing","image":"image4.jpg", "description":"M.S. Round Pipe", "seqNb": 2
+				}
+			]
+		}
+		
+	]
+}

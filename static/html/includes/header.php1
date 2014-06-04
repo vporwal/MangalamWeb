@@ -1,0 +1,141 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+	<head>
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- Mobile viewport optimized: h5bp.com/viewport -->
+		<meta name="viewport" content="width=device-width">
+		<title>Mangalam - Roofing Products : Color Coated Sheets , Galvanized Sheets</title>
+		<meta name="robots" content="">
+		<meta name="description"
+			content="Mangalam : Color coated sheets tiles sheets." />
+		<meta name="keywords"
+			content="color coated sheets, color coated, precoated, steel, mangalam, mangalam steel, mangalam enterprises, mangalam door,mangalam patra depot,flash door, door, tiles sheet, tiles sheets, enterprise, steel center, patra, depot" />
+		<meta name="author" content="Mangalam steel color coated tiles sheets" />
+
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/custom.css?buildVersion=1.0.0.1" />
+		<script type="text/javascript" src="../../jQuery/1.10/jquery-1.10.2.min.js?buildVersion=1.0.0.1"></script>
+		<script type="text/javascript" src="../../jQuery/collapsible/jquery.collapsible.min.js?buildVersion=1.0.0.1"></script>
+		<script type="text/JavaScript" src="../../jQuery/carousel/jquery.carouFredSel-6.2.1.js?buildVersion=1.0.0.1"></script>
+		<script type="text/JavaScript" src="../../jQuery/carousel/jquery.transit.min.js?buildVersion=1.0.0.1"></script>
+		<script type="text/JavaScript" src="../../jQuery/lazyload/jquery.lazy.min.js?buildVersion=1.0.0.1"></script>		
+		<script type="text/JavaScript" src="../../jQuery/elevatezoom/jquery.elevateZoom-3.0.0.min.js?buildVersion=1.0.0.1"></script>
+		<script type="text/JavaScript" src="../../jQuery/slideshow/jquery.prettyPhoto.js?buildVersion=1.0.0.1"></script>
+		<script type="text/javascript" src="../js/producthelper.js?buildVersion=1.0.0.1"></script>
+		
+	</head>
+	<body>
+		
+			<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1380664268867640";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<div id="container">		
+			<div id="menu">
+				<div id="logo"><a href="../html/home_1.php"><img src="../../images/Logo.png" alt="Mangalam" title="Mangalam" /></a></div>
+				<ul class="menu">
+					<li><a href="../html/products_v1.php" class="products" id="products">Products</a></li>
+					<li><a href="../html/services_v1.php" >Services</a></li>
+					<li><a href="../html/contactus.php">Contact Us</a></li>
+					<li><a href="../html/help.php">Help</a></li> 
+					<li>
+						<form method="get" action="../html/search_result.php">
+							<input type="text" style="border-right:0px !important;" class="tftextinput" name="searchTxt" id="searchTxt" size="30" maxlength="120"><input type="submit" value="Search" class="tfbutton">
+						</form>
+					</li>
+					<li style="padding:0 0 0 0;">
+						<a class="enqCart" href="#" onclick="renderCart()"><img src="../../images/cart.png" alt="My Cart" border="0" /></a>
+						<div id="viewCartInline" style="display: none">
+							<div style="text-decoration:underline;font-size:12px;font-weight:bold">
+								Your cart contains following Products :
+							</div>							
+							<div id="renderProds" style="padding-top:5px;">
+							</div>
+							<div style="text-align: right;padding-top: 10px;">
+								<a href="../html/enquiryCart.php" style="color:blueviolet !important;font-size: 12px">View Enquiry Cart</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="divCarousel-1" class="smallgallery" style="padding:0 0 10px 0">			
+				<img style="width:100% !important" src="../../images/home_decor/header_images/roll_image2.jpg" alt="" title="" height="200px" />
+				<img style="width:100% !important" src="../../images/home_decor/header_images/roll_image3.jpg" alt="" title="" height="200px" /> 
+				<img style="width:100% !important" src="../../images/home_decor/header_images/roll_image4.jpg" alt="" title="" height="200px" /> 
+				<img style="width:100% !important" src="../../images/home_decor/header_images/roll_image5.jpg" alt="" title="" height="200px" /> 
+				<img style="width:100% !important" src="../../images/home_decor/header_images/roll_image6.jpg" alt="" title="" height="200px" /> 
+				<img style="width:100% !important" src="../../images/home_decor/header_images/top_scroll.jpg" alt="" title="" height="200px" /> 
+			</div>
+		<!-- <div class="line"> -->
+		</div>
+<script>
+	$("#divCarousel-1").carouFredSel({
+		circular			: true,
+		infinte				: true, 		
+		items				: 1,
+		direction			: "rigth",
+		transition			: true,
+		scroll : {
+			items			: 1,
+			easing			: "swing",
+			duration		: 1000,
+			pauseOnHover	: true,
+			fx				: 'uncover-fade'
+		},
+		mousewheel: {
+			items			: 1,
+			easing			: "swing",
+			duration		: 1000,
+			pauseOnHover	: true
+		}
+	});
+	
+	function isValid() {
+		if (document.getElementById("searchTxt").value == '') {
+			return false;
+		}
+		document.forms[0].submit();
+		return true;
+	}
+	
+	function renderCart(event) {
+		$("#viewCartInline").toggle();
+		$("#renderProds").html('');
+		<?php 
+			if (isset($_SESSION['prodData'])) {
+				$sessionData = $_SESSION["prodData"];
+				if (count($sessionData) > 0 ) {
+					foreach($sessionData as $x=>$x_value) {
+		?>
+					$("#renderProds").append('<div class="cartDiv" id="<?php echo $x;?>">');
+					$("#renderProds").append('<span class="cellunderline"><a class="removeItem" prodId="<?php echo $x?>" href="#"><img src="../../images/iconDelete.gif" title="" alt=""></img></a></span>');
+					$("#renderProds").append('<span class="cellunderline" style="color: black !important"><?php echo $x_value ?></span>');
+					$("#renderProds").append('</div><div class="line"></div>');	
+		<?php
+					}
+				}
+			}
+		?>
+		$("span.cellunderline").delegate('a.removeItem','click', function(event) {
+			var productCode = $(this).attr("prodId");
+			var div_ = $(this).closest('div');
+			div_.remove();
+			$.ajax({
+				type: 'GET',
+				url: "../html/store_session.php?productId=" + productCode +"&action=remove",
+				dataType: 'json',
+				success: function(data){
+					
+				},
+				failure: function() {
+					
+				}
+			});
+		});
+	}
+</script>

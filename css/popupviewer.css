@@ -1,0 +1,126 @@
+#backgroundPopup {
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	border:1px solid #cecece;
+	z-index:1;
+}
+
+#popupCloseAnchor {
+	line-height:14px;
+	right:6px;
+	top:4px;
+	position:absolute;
+/* 	color:#6fa5fd; */
+	color:#111111;
+	font-weight:700;
+	display:block;
+	cursor: pointer;
+}
+
+#popupContainer {
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	/* height:500px; */
+	/* width:900px; */
+	background:#FFFFFF;
+	border:1px solid #076971;
+	z-index:2;
+	/* padding:12px; */
+	font-size:13px;
+	padding: 0 0 3px 0px;
+}
+
+#popupContainer h1 {
+	text-align:left;
+	color:#6FA5FD;
+	font-size:22px;
+	font-weight:700;
+	border-bottom:1px dotted #D3D3D3;
+	padding-bottom:2px;
+	margin-bottom:20px;
+}
+
+#popupHeader {
+	background: none repeat scroll 0 0 #076971;
+	opacity: 0.8;
+	color:white;
+	padding: 1px 1px 5px 10px;
+	font-weight: bold; 
+	-webkit-box-shadow:
+		0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45),
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
+		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+	box-shadow:
+		0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45),
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
+		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+		
+}
+
+#popupDataContainer {
+	border-left: 1px solid;
+}
+
+#imageContainer {
+	border-right: 1px dotted ;
+	/* padding-top: 2px 0 0 0; */	
+	margin: 5px 5px 5px 5px;
+	width: 350px;
+	height: 250px;
+}
+
+#popupContainer #description {
+	padding: 1px 5px 1px 5px;
+	font-size: 12px !important;
+}
+
+.enquirybutton {
+	
+	width: 200px; 
+	height: 30px; 
+	background: #797979 no-repeat; cursor: pointer; 
+	border: 1px solid #999;
+	border-radius: 6px;
+	color: white;
+		
+	/* -webkit-box-shadow:
+		0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45),
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
+		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+	box-shadow:
+		0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45),
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
+		inset -1px 1px 0px rgba(255, 255, 255, 0.45); */
+	text-decoration: none;
+	/* color: #fff !important;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35); */
+	/* padding: 8px 15px; */
+	font-size: 13px;
+	font-weight: bold;
+	/* -webkit-transition: all 0.2s; */
+	/* transition: all 0.2s; */
+	/* background-color: darkseagreen; */
+	/* background-color: #076871 */
+	float: right;
+	/* 
+	padding: 5px 10px 5px 10px; */
+}
+
+#popupContainer #description p {
+	padding-left: 360px;	 
+}
